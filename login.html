@@ -52,8 +52,48 @@
     border-top-right-radius: 0;
   }
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 
 </style>
+<head><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contsct.html">Contact Us</a></li>
+  <li><a href="register.html">Register</a></li>
+  <li style="float:right"><a class="active" href="login.html">Login</a></li>
+
+</ul>
+</head>
 <center>
     <div class="wrapper">
     <form class="form-signin">       
@@ -66,6 +106,8 @@
       </label>
            <br> <br>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+
+    <
     </form>
   </div>
   </center>
